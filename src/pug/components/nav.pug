@@ -1,0 +1,16 @@
+.nav-items Inicio
+if !footer
+    .nav-items.cursos-titulo Cursos <i class="fas fa-chevron-down"></i>
+        .cursos
+            .cursos-items Cursos Especialidades
+            .cursos-items Cursos Taller
+else
+    .nav-items Noticias
+    .nav-items Cursos Especialidades
+    .nav-items Cursos Taller
+.nav-items Inscripción
+.nav-items Nosotros
+.nav-items Contacto
+if !footer
+    .nav-items
+        input(type="button", value="Area de Alumnos")

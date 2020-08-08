@@ -1,0 +1,29 @@
+@import "./components/mixins";
+@import "./components/header";
+
+main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .main {
+    position: relative;
+    bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .call-action {
+      display: flex;
+    }
+  }
+}
+
+body {
+  background-color: brown;
+}
+
+p {
+  background-color: brown;
+}

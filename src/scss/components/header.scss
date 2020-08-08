@@ -1,0 +1,50 @@
+body {
+  background-color: skyblue;
+}
+
+.header {
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 500;
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+
+    .nav-items .cursos {
+      position: absolute;
+      display: none;
+    }
+
+    .nav-items.cursos-titulo:hover {
+      .cursos {
+        display: block;
+      }
+    }
+  }
+}
+
+main {
+  width: 100vw;
+  height: 70vh;
+  background-color: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    opacity: 0.7;
+  }
+}
