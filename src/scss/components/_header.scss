@@ -1,0 +1,36 @@
+@mixin alineacion-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  background: none;
+  @include alineacion-menu;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+
+  nav {
+    @include alineacion-menu;
+
+    .nav-items {
+      margin: 0px 10px;
+      .cursos {
+        position: absolute;
+        display: none;
+
+        .cursos-items {
+          margin: 10px 0px;
+        }
+      }
+    }
+    .nav-items.cursos-titulo:hover {
+      .cursos {
+        display: block;
+      }
+    }
+  }
+}

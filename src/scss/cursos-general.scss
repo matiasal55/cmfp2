@@ -1,0 +1,13 @@
+@import "./components/mixins";
+
+@include imagen-de-fondo("../img/especialidades.jpg");
+
+.cursos-cards {
+  @include cards;
+}
+
+@media (max-device-width: 768px) {
+  .cursos-card a img {
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,5 @@
+each curso in cursos
+    .cursos-card
+        a(href=`./cursos/${curso.toLowerCase().replace(/ /g,"-").normalize("NFD").replace(/[\u0300-\u036f]/g,"")}.html`)
+            img(src=`./img/cursos/${curso.toLowerCase().replace(/ /g,"-").normalize("NFD").replace(/[\u0300-\u036f]/g,"")}.jpg`, alt="")
+            p #{curso}

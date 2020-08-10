@@ -4,6 +4,7 @@
 - let directorio;
 - let footer=false;
 - let img;
+- let abierta=false;
 
 <!DOCTYPE html>
 html(lang="en")
@@ -13,17 +14,18 @@ html(lang="en")
         block parametros
         title #{titulo} - CMFP N° 2
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
         link(rel="stylesheet", href=`${directorio}/css/${archivo}.css`)
         if js
             script(src=`${directorio}/js/${archivo}.js`)
     body
+        .header
+            header
+                a(href=`${directorio}/index.html`)
+                    img(src=`${directorio}/img/logo.jpg`)
+            nav
+                include ./nav
         main
-            .header
-                header
-                    a(href="./index.html")
-                        img(src="./img/logo.jpg")
-                nav
-                    include ./nav
             .main
                 block main
         block contenido

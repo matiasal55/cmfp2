@@ -1,0 +1,34 @@
+@import "./components/mixins";
+
+@include imagen-de-fondo("../img/contacto.jpg");
+
+.error {
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
+
+#alerta {
+  color: black;
+}
+
+textarea {
+  resize: none;
+  width: 30vw;
+}
+
+form {
+  margin-top: 30px;
+  input {
+    width: 30vw;
+    height: 20px;
+  }
+
+  .campo {
+    margin-bottom: 30px;
+  }
+
+  .button-second {
+    border: 1px solid red;
+  }
+}

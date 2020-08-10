@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contacto - CMFP N° 2</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/contacto.css?t=1597093659778"/>
+  </head>
+  <body>
+    <div class="header">
+      <header><a href="./index.html"><img src="./img/logo.jpg"/></a></header>
+      <nav>
+        <div class="nav-items"><a href="./index.html">Inicio</a></div>
+        <div class="nav-items cursos-titulo">Cursos <i class="fas fa-chevron-down"></i>
+          <div class="cursos">
+            <div class="cursos-items"> <a href="./cursos-especialidades.html">Cursos Especialidades</a></div>
+            <div class="cursos-items"><a href="./cursos-taller.html">Cursos Taller</a></div>
+          </div>
+        </div>
+        <div class="nav-items"> <a href="./inscripcion.html">Inscripción</a></div>
+        <div class="nav-items"><a href="./nosotros.html">Nosotros</a></div>
+        <div class="nav-items"><a href="./contacto.html">Contacto</a></div>
+        <div class="nav-items">
+          <input class="button-first" type="button" value="Area de Alumnos"/>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <div class="main">
+      </div>
+    </main>
+    <section>
+      <h1>Contacto</h1><br/>
+      <p>Podés contactarnos a través del siguiente formulario o por email enviando un mensaje a <span class="resaltar">cmfp@yahoo.com. </span><span>También podés llamar al </span><span class="resaltar">(011) 4629 - 1781.</span></p>
+      <form class="form" action="" id="form">
+        <div class="campo">
+          <label for="nombre"></label>
+          <div class="resaltar">Nombre: </div>
+          <input type="text" id="nombre" placeholder="Ingrese su nombre"/>
+          <div class="error">
+            <p>Mensaje de error</p>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="apellido"></label>
+          <div class="resaltar">Apellido: </div>
+          <input type="text" id="apellido" placeholder="Ingrese su apellido"/>
+          <div class="error"></div>
+        </div>
+        <div class="campo">
+          <label for="email"></label>
+          <div class="resaltar">E-mail: </div>
+          <input type="text" id="email" placeholder="Ingrese su email"/>
+          <div class="error"></div>
+        </div>
+        <div class="campo">
+          <label for="telefono"></label>
+          <div class="resaltar">Teléfono: </div>
+          <input type="text" id="telefono" placeholder="Ingrese su telefono"/>
+          <div class="error"></div>
+        </div>
+        <div class="campo">
+          <label for="asunto"></label>
+          <div class="resaltar">Asunto: </div>
+          <input type="text" id="asunto" placeholder="Ingrese su asunto"/>
+          <div class="error"></div>
+        </div>
+        <div class="campo mensaje">
+          <label for="mensaje"></label>
+          <div class="resaltar">Mensaje: </div>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <div class="caracteres">
+            <p id="alerta"><span id="ingresados">0 </span><span>/ </span><span id="maximo">500 </span><span>caracteres.</span></p>
+          </div>
+        </div>
+        <div class="boton-form">
+          <button class="button-first" type="submit">Enviar</button>
+          <button class="button-second" type="reset">Reestablecer                        </button>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="datos">
+          <p>Centro Municipal de Formación Profesional N°2</p>
+          <p>Manuel Belgrano</p>
+          <p>Dirección: <span>Maestra Cueto 750 - Morón</span></p>
+          <p>Horario de atención: <span>Lunes a viernes de 18 a 21 hs.</span></p>
+          <p>Teléfono: <span>(011) 4629 - 1781</span></p>
+          <p>Email: <span>cmfp2@yahoo.com</span></p>
+        </div>
+        <div class="nav-footer">
+          <div class="nav-items"><a href="./index.html">Inicio</a></div>
+          <div class="nav-items"><a href="./noticias.html">Noticias</a></div>
+          <div class="nav-items"><a href="./cursos-especialidades.html">Cursos Especialidades</a></div>
+          <div class="nav-items"><a href="./cursos-taller.html">Cursos Taller</a></div>
+          <div class="nav-items"> <a href="./inscripcion.html">Inscripción</a></div>
+          <div class="nav-items"><a href="./nosotros.html">Nosotros</a></div>
+          <div class="nav-items"><a href="./contacto.html">Contacto</a></div>
+        </div>
+        <div class="redes">
+          <p>Seguinos en nuestras redes</p>
+          <p><i class="fab fa-facebook-square"></i> <i class="fab fa-instagram"></i></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

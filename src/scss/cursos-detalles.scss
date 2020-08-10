@@ -1,0 +1,7 @@
+@import "./components/mixins";
+
+@include imagen-de-fondo("../img/cursos/telefonia-ip.jpg");
+
+.curso-img {
+  @include cards;
+}

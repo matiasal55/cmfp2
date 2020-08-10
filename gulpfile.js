@@ -28,7 +28,7 @@ gulp.task("babel", () => {
 
 gulp.task("pug", () => {
   return gulp
-    .src("./src/pug/pages/*.pug")
+    .src("./src/pug/pages/**/*.pug")
     .pipe(plumber())
     .pipe(
       pug({

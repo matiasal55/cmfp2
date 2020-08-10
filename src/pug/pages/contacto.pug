@@ -1,0 +1,54 @@
+extends ../components/master
+
+block parametros
+    - titulo="Contacto"
+    - archivo="contacto"
+    - directorio="."
+block contenido
+    section
+        h1 #{titulo}
+        br
+        p Podés contactarnos a través del siguiente formulario o por email enviando un mensaje a 
+            span.resaltar cmfp@yahoo.com. 
+            span También podés llamar al 
+            span.resaltar (011) 4629 - 1781.
+        form(action="" id="form" class="form")
+            .campo
+                label(for="nombre")
+                div.resaltar Nombre: 
+                input(type="text" id="nombre" placeholder="Ingrese su nombre")
+                .error
+                    p Mensaje de error
+            .campo
+                label(for="apellido")
+                div.resaltar Apellido: 
+                input(type="text" id="apellido" placeholder="Ingrese su apellido")
+                .error
+            .campo
+                label(for="email")
+                div.resaltar E-mail: 
+                input(type="text" id="email" placeholder="Ingrese su email")
+                .error
+            .campo
+                label(for="telefono")
+                div.resaltar Teléfono: 
+                input(type="text" id="telefono" placeholder="Ingrese su telefono")
+                .error
+            .campo
+                label(for="asunto")
+                div.resaltar Asunto: 
+                input(type="text" id="asunto" placeholder="Ingrese su asunto")
+                .error
+            .campo.mensaje
+                label(for="mensaje")
+                div.resaltar Mensaje: 
+                textarea(name="mensaje", id="mensaje" cols="30", rows="10")
+                .caracteres
+                    p#alerta
+                        span#ingresados 0 
+                        span / 
+                        span#maximo 500 
+                        span caracteres.
+            .boton-form
+                button(type="submit" class="button-first") Enviar
+                button(type="reset" class="button-second") Reestablecer                        

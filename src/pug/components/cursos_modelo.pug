@@ -1,0 +1,54 @@
+extends ../components/master
+
+block parametros
+    - titulo=titulo_curso
+    - archivo="cursos-detalles"
+    - directorio=".."
+block contenido
+    section
+        - const duracion=["1 cuatrimestre","1 año","2 años"];
+        - const requisitos=["Primario","Secundario"];
+        - const periodo_inscripcion=["Noviembre","Junio"];
+        h1 #{titulo_curso}
+        h3 Presentación
+        p #{presentacion}
+        br
+        h3 Duración
+        p #{duracion[duracion_nro-1]}
+        br
+        h3 Días y horarios
+        p #{dias} de 18 a 22hs.
+        br
+        if duracion_nro==1
+            h3 Período de cursada
+            p #{periodo}
+            br
+        h3 Requisitos
+        p #{requisitos[req_nro-1]} completo
+        br
+        h3 Certificación otorgada
+        p #{certificacion}
+        br
+        h3 Período de inscripción
+        p #{periodo_inscripcion[inscripcion_nro-1]}
+        br
+        h3 Contenidos
+        ul
+            each contenido in contenidos
+                li #{contenido}
+        br
+        if profesores.length>1
+            h3 Docentes
+            each profesor in profesores
+                p #{profesor}
+        else
+            h3 Docente
+            p #{profesores[0]}
+        br
+        if galeria>1
+            h3 Galería de imágenes
+            .curso-img
+                - let contador=1;
+                while contador<=galeria
+                    .img
+                        img(src=`../img/cursos/${titulo.toLowerCase().replace(/ /g,"-").normalize("NFD").replace(/[\u0300-\u036f]/g,"")}-0${contador++}.jpg`, alt="")

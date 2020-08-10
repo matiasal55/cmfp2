@@ -1,16 +1,25 @@
-.nav-items Inicio
+.nav-items
+    a(href=`${directorio}/index.html`) Inicio
 if !footer
     .nav-items.cursos-titulo Cursos <i class="fas fa-chevron-down"></i>
         .cursos
-            .cursos-items Cursos Especialidades
-            .cursos-items Cursos Taller
+            .cursos-items 
+                a(href=`${directorio}/cursos-especialidades.html`) Cursos Especialidades
+            .cursos-items
+                a(href=`${directorio}/cursos-taller.html`) Cursos Taller
 else
-    .nav-items Noticias
-    .nav-items Cursos Especialidades
-    .nav-items Cursos Taller
-.nav-items Inscripción
-.nav-items Nosotros
-.nav-items Contacto
+    .nav-items
+        a(href=`${directorio}/noticias.html`) Noticias
+    .nav-items
+        a(href=`${directorio}/cursos-especialidades.html`) Cursos Especialidades
+    .nav-items
+        a(href=`${directorio}/cursos-taller.html`) Cursos Taller
+.nav-items 
+    a(href=`${directorio}/inscripcion.html`) Inscripción
+.nav-items
+    a(href=`${directorio}/nosotros.html`) Nosotros
+.nav-items
+    a(href=`${directorio}/contacto.html`) Contacto
 if !footer
     .nav-items
-        input(type="button", value="Area de Alumnos")
+        input(type="button", value="Area de Alumnos" class="button-first")

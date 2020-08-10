@@ -1,0 +1,35 @@
+- 
+    const card_1={
+        img:"01",
+        titulo:"Duración de los cursos",
+        subtitulo:"Cuatrimestrales y anuales",
+    }
+
+- 
+    const card_2={
+        img:"02",
+        titulo:"Rápida salida laboral",
+        subtitulo:"Ya podés trabajar de lo que aprendiste",
+    }
+
+- 
+    const card_3={
+        img:"03",
+        titulo:"Cursos certificados",
+        subtitulo:"Por la municipalidad de Morón y Provincia",
+    }
+
+- 
+    const card_4={
+        img:"04",
+        titulo:"Cursos no arancelados",
+        subtitulo:"Se puede colaborar con Cooperadora",
+    }
+
+- const cards=[card_1,card_2,card_3, card_4];
+
+each card in cards
+    .section1-card
+        img(src=`./img/${card.img}.png`, alt="")
+        h4 #{card.titulo}
+        h4 #{card.subtitulo}

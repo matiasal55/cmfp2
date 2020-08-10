@@ -1,0 +1,13 @@
+extends ../components/master
+
+block parametros
+    - titulo="Cursos Especialidades"
+    - archivo="cursos-general"
+    - directorio="."
+block contenido
+    section
+        h1 #{titulo}
+        p Cursos con una duración de 4 meses a 2 años. Una vez finalizado ya podés trabajar de lo que aprendiste.
+        .cursos-cards
+            - let cursos=["Reparación de PC","Telefonía IP","Herrería", "Peluquería","Auxiliar Contable","Montador Electricista"];
+            include ../components/cursos_cards
