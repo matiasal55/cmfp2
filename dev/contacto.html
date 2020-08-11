@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Contacto - CMFP N° 2</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/contacto.css?t=1597114515874"/>
+    <link rel="stylesheet" href="./css/contacto.css?t=1597180651995"/>
   </head>
   <body>
     <div class="header">
@@ -40,42 +40,41 @@
         <div class="campo">
           <label for="nombre"></label>
           <div class="resaltar">Nombre: </div>
-          <input type="text" id="nombre" placeholder="Ingrese su nombre"/>
-          <div class="error">
-            <p>Mensaje de error</p>
-          </div>
+          <input class="campos" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"/>
+          <div class="error"></div>
         </div>
         <div class="campo">
           <label for="apellido"></label>
           <div class="resaltar">Apellido: </div>
-          <input type="text" id="apellido" placeholder="Ingrese su apellido"/>
+          <input class="campos" type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido"/>
           <div class="error"></div>
         </div>
         <div class="campo">
           <label for="email"></label>
           <div class="resaltar">E-mail: </div>
-          <input type="text" id="email" placeholder="Ingrese su email"/>
+          <input class="campos" type="text" id="email" name="email" placeholder="Ingrese su email"/>
           <div class="error"></div>
         </div>
         <div class="campo">
           <label for="telefono"></label>
           <div class="resaltar">Teléfono: </div>
-          <input type="text" id="telefono" placeholder="Ingrese su telefono"/>
+          <input class="campos" type="text" id="telefono" name="teléfono" placeholder="Ingrese su teléfono"/>
           <div class="error"></div>
         </div>
         <div class="campo">
           <label for="asunto"></label>
           <div class="resaltar">Asunto: </div>
-          <input type="text" id="asunto" placeholder="Ingrese su asunto"/>
+          <input class="campos" type="text" id="asunto" name="asunto" placeholder="Ingrese su asunto"/>
           <div class="error"></div>
         </div>
         <div class="campo mensaje">
           <label for="mensaje"></label>
           <div class="resaltar">Mensaje: </div>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
           <div class="caracteres">
-            <p id="alerta"><span id="ingresados">0 </span><span>/ </span><span id="maximo">500 </span><span>caracteres.</span></p>
+            <p id="alerta"><span id="ingresados">0 </span><span>/ </span><span id="maximo"> </span><span>caracteres.</span></p>
           </div>
+          <div class="error"></div>
         </div>
         <div class="boton-form">
           <button class="button-first" type="submit">Enviar</button>
@@ -108,6 +107,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/index.js?t=1597114515874"></script>
+    <script src="./js/contacto.js?t=1597180651995"></script>
   </body>
 </html>

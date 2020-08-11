@@ -2,14 +2,16 @@
 
 @include imagen-de-fondo("../img/contacto.jpg");
 
-.error {
-  font-weight: bold;
-  color: red;
+#alerta {
+  color: black;
   margin-top: 10px;
 }
 
-#alerta {
-  color: black;
+.error,
+#alerta-maxima {
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
 }
 
 textarea {
