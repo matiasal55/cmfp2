@@ -1,3 +1,5 @@
+$responsive: 768px;
+
 @mixin imagen-de-fondo($imagen) {
   main {
     height: 70vh;
@@ -21,6 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
+  text-align: center;
   > div {
     img {
       max-width: 400px;

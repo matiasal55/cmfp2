@@ -5,3 +5,9 @@
 .curso-img {
   @include cards;
 }
+
+@media (max-device-width: 768px) {
+  .img img {
+    width: 250px;
+  }
+}

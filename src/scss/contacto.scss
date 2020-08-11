@@ -32,3 +32,10 @@ form {
     border: 1px solid red;
   }
 }
+
+@media (max-device-width: $responsive) {
+  form input,
+  form textarea {
+    width: 80vw;
+  }
+}

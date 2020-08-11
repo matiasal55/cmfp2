@@ -13,6 +13,17 @@
   top: 0;
   z-index: 500;
 
+  header {
+    display: flex;
+    align-items: center;
+    .boton-responsive {
+      color: white;
+      font-size: 30px;
+      display: none;
+      cursor: pointer;
+    }
+  }
+
   nav {
     @include alineacion-menu;
 
@@ -30,6 +41,85 @@
     .nav-items.cursos-titulo:hover {
       .cursos {
         display: block;
+      }
+    }
+  }
+}
+
+@media (max-device-width: $responsive) {
+  .header {
+    flex-direction: column;
+
+    header {
+      background-color: black;
+      width: 100vw;
+      justify-content: space-between;
+      position: relative;
+      z-index: 600;
+
+      div {
+        margin: 0px 10px;
+      }
+
+      .boton-responsive {
+        display: block;
+        margin-left: 10px;
+      }
+    }
+
+    nav {
+      flex-direction: column;
+      background-color: red;
+      color: white;
+      width: 100vw;
+
+      .nav-items {
+        margin: 10px 0px;
+        text-align: center;
+
+        a {
+          color: white;
+        }
+
+        .cursos {
+          width: 100vw;
+          background-color: white;
+          position: relative;
+          text-align: center;
+
+          .cursos-items {
+            padding: 10px 0px;
+            a {
+              color: red;
+            }
+          }
+        }
+
+        .cursos.responsive {
+          display: block;
+        }
+      }
+
+      .button-first {
+        background-color: white;
+        color: red;
+        margin: 0;
+      }
+    }
+
+    .menu {
+      // display: none;
+      // position: absolute;
+      // bottom: -100vh;
+      position: fixed;
+      top: -50%;
+      transition: all 0.5s;
+      z-index: 450;
+
+      &.responsive {
+        // display: block;
+        // bottom: 50vh;
+        top: 56px;
       }
     }
   }
