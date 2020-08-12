@@ -22,8 +22,8 @@ a mi portafolios. En caso que se concreten exitosamente todas las fases del siti
    <li>Fase 3 Backend: Se realizará el sistema de "Area de Alumnos" y de "Inscripción online". Herramientas a definir.</li>
    </ul>
   
-  04/08/2020 - 06/08/2020: Diseño de prototipo (wireframe) en Adobe XD.
-  07/08/2020: Configuración de Gulp. Inicio de desarrollo en Pug y Sass. Home a terminar.
-  10/08/2020: Estructura básica terminada, con estilos. Falta agregar más cursos con sus detalles y fotos.
-  11/08/2020: Validación de formulario de contacto terminada. Se trató de hacer una validación más simple. A comparación de mi anterior proyecto donde validaba cada campo por separado, en esta ocasión se validaron los campos a través de forEach. Se creo un array booleano de estados. El formulario no está completo hasta que en el array no haya ningún estado false.
-  11/08/2020: Se realizó el modal que confirma que se envió el mensaje correctamente. En esa parte falta el action que enviará el formulario. Después se hizo el efecto que el menú cambia de color en el scroll. Responsive terminado. Se hizo la página de Noticias pero no se profundizó más allá ya que faltan Noticias y considero que esa sección lleva otro tipo de desarrollo el cual por el momento no se. Queda por hacer: diseño y backend de Inscripción y Area de Alumnos, sección Noticias, envío de mensaje.
+  <p>04/08/2020 - 06/08/2020: Diseño de prototipo (wireframe) en Adobe XD.</p>
+  <p>07/08/2020: Configuración de Gulp. Inicio de desarrollo en Pug y Sass. Home a terminar.</p>
+  <p>10/08/2020: Estructura básica terminada, con estilos. Falta agregar más cursos con sus detalles y fotos.</p>
+  <p>11/08/2020: Validación de formulario de contacto terminada. Se trató de hacer una validación más simple. A comparación de mi anterior proyecto donde validaba cada campo por separado, en esta ocasión se validaron los campos a través de forEach. Se creo un array booleano de estados. El formulario no está completo hasta que en el array no haya ningún estado false.</p>
+  <p>11/08/2020: Se realizó el modal que confirma que se envió el mensaje correctamente. En esa parte falta el action que enviará el formulario. Después se hizo el efecto que el menú cambia de color en el scroll. Responsive terminado. Se hizo la página de Noticias pero no se profundizó más allá ya que faltan Noticias y considero que esa sección lleva otro tipo de desarrollo el cual por el momento no se. Queda por hacer: diseño y backend de Inscripción y Area de Alumnos, sección Noticias, envío de mensaje, más cursos.</p>
