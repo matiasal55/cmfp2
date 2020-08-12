@@ -1,4 +1,5 @@
 # cmfp2
+
 <h1>[Personal] Proyecto "Centro Municipal de Formación Profesional N°2"</h1>
 <p> Proyecto de rediseño del sitio web del Centro Municipal de Formación Profesional N°2 Manuel Belgrano de la localidad de Morón, Buenos Aires. En el establecimiento 
 hice el curso de Redes Informáticas y Telefonía IP impartido por el profesor Alberto Lopez, con quien terminé mi relación momentanea en excelentes términos. 
@@ -24,3 +25,5 @@ a mi portafolios. En caso que se concreten exitosamente todas las fases del siti
   04/08/2020 - 06/08/2020: Diseño de prototipo (wireframe) en Adobe XD.
   07/08/2020: Configuración de Gulp. Inicio de desarrollo en Pug y Sass. Home a terminar.
   10/08/2020: Estructura básica terminada, con estilos. Falta agregar más cursos con sus detalles y fotos.
+  11/08/2020: Validación de formulario de contacto terminada. Se trató de hacer una validación más simple. A comparación de mi anterior proyecto donde validaba cada campo por separado, en esta ocasión se validaron los campos a través de forEach. Se creo un array booleano de estados. El formulario no está completo hasta que en el array no haya ningún estado false.
+  11/08/2020: Se realizó el modal que confirma que se envió el mensaje correctamente. En esa parte falta el action que enviará el formulario. Después se hizo el efecto que el menú cambia de color en el scroll. Responsive terminado. Se hizo la página de Noticias pero no se profundizó más allá ya que faltan Noticias y considero que esa sección lleva otro tipo de desarrollo el cual por el momento no se. Queda por hacer: diseño y backend de Inscripción y Area de Alumnos, sección Noticias, envío de mensaje.

@@ -1,0 +1,19 @@
+extends ../components/master
+
+block parametros
+    - titulo="Noticias"
+    - archivo="noticias"
+    - directorio="."
+block contenido
+    section
+        h1 Noticias
+        .noticias
+            include ../components/noticias
+            each noticia in noticias
+                .noticia
+                    .img
+                        img(src=`./img/${noticia.img}.jpg`, alt="")
+                    .detalles
+                        h2 #{noticia.titulo}
+                        p #{noticia.subtitulo}
+                        p.fecha Publicado el #{noticia.fecha}

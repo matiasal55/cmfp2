@@ -1,0 +1,15 @@
+@import "./components/mixins";
+
+@include imagen-de-fondo("../img/portada_noticias.jpg");
+
+.noticia {
+  display: flex;
+  margin: 30px 0px;
+  .img img {
+    width: 250px;
+    margin-right: 30px;
+  }
+  .fecha {
+    font-style: italic;
+  }
+}

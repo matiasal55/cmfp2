@@ -4,6 +4,8 @@
   align-items: center;
 }
 
+$opacidad: rgba(0, 0, 0, 0.7);
+
 .header {
   background: none;
   @include alineacion-menu;
@@ -12,6 +14,12 @@
   position: fixed;
   top: 0;
   z-index: 500;
+  transition: 0.5s;
+
+  &.scroll {
+    background-color: $opacidad;
+    transition: 0.5s;
+  }
 
   header {
     display: flex;
@@ -24,26 +32,49 @@
     }
   }
 
+  .scroll {
+    color: white;
+    a {
+      color: white;
+    }
+  }
+
   nav {
     @include alineacion-menu;
 
     .nav-items {
       margin: 0px 10px;
+      font-weight: bold;
+
+      &.cursos-titulo {
+        cursor: pointer;
+      }
+
       .cursos {
         position: absolute;
         display: none;
+        padding: 10px;
+        top: 58px;
+
+        &.scroll {
+          background-color: $opacidad;
+        }
+
+        &.responsive {
+          display: block;
+        }
 
         .cursos-items {
           margin: 10px 0px;
         }
       }
     }
-    .nav-items.cursos-titulo:hover {
-      .cursos {
-        display: block;
-      }
-    }
   }
+  // .nav-items.cursos-titulo:hover {
+  //   .cursos {
+  //     display: block;
+  //   }
+  // }
 }
 
 @media (max-device-width: $responsive) {
@@ -108,17 +139,12 @@
     }
 
     .menu {
-      // display: none;
-      // position: absolute;
-      // bottom: -100vh;
       position: fixed;
       top: -50%;
       transition: all 0.5s;
       z-index: 450;
 
       &.responsive {
-        // display: block;
-        // bottom: 50vh;
         top: 56px;
       }
     }
