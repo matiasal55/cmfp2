@@ -9,8 +9,10 @@ block main
     h1 Manuel Belgrano
     h3 Capacitate con los mejores cursos de alta calidad
     .call-action
-        input(type="button", value="Ver Cursos" class="button-first")
-        input(type="button", value="Informes de inscripción" class="button-second")
+        a(href="./cursos-especialidades.html")
+            input(type="button", value="Ver Cursos" class="button-first")
+        a(href="./inscripcion.html")
+            input(type="button", value="Informes de inscripción" class="button-second")
 block contenido
     section
         h1 ¿Por qué cursar?
@@ -37,4 +39,5 @@ block contenido
                 .fecha
                     p.numero 01
                     p.mes Lorem
-                h4 Más información
+                a(href="./inscripcion.html")
+                    h4 Más información
