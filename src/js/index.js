@@ -26,3 +26,17 @@ window.onscroll = () => {
     ver_cursos.classList.remove("scroll");
   }
 };
+
+const barra = document.getElementsByClassName("loading-bar")[0];
+const loading = document.getElementsByClassName("loading")[0];
+
+// window.addEventListener("load", (e) => {
+//   if (document.readyState == "loading") barra.innerHTML = document.readyState;
+//   else {
+//     loading.remove();
+//   }
+// });
+
+window.addEventListener("DOMContentLoaded", (e) => {
+  loading.remove();
+});

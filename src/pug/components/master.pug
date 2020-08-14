@@ -33,6 +33,10 @@ html(lang="en")
         block contenido
         footer
             include ./footer
+        .loading
+            .img
+                img(src=`${directorio}./img/logo.jpg`, alt="")
+            .loading-bar Cargando...
         if js
             script(src=`${directorio}/js/${archivo}.js`)
         else
