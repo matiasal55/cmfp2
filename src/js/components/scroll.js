@@ -3,7 +3,7 @@ const ver_cursos = document.getElementsByClassName("cursos")[0];
 const header = document.getElementsByClassName("header")[0];
 const scrollMaxMenu = 300;
 const footer = document.getElementsByClassName("footer")[0];
-const scrollFooter = screen.height * 0.8;
+const scrollFooter = screen.height * 0.65;
 
 // Fade a medida que scrollea, solo index
 export const scrollSection = (section, scroll) => {
@@ -23,7 +23,6 @@ export const scrollMenu = () => {
   }
 
   // Incluye fade Footer
-  scrollSection(footer, scrollFooter);
 };
 
 // Fadein de contenidos, excepto index
@@ -31,4 +30,8 @@ export const contenidos = (section, tiempo) => {
   setTimeout(() => {
     section.classList.add("mostrar");
   }, tiempo);
+};
+
+export const fadeFooter = () => {
+  scrollSection(footer, scrollFooter);
 };

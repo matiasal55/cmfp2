@@ -1,4 +1,4 @@
-import { scrollMenu, scrollSection } from "./components/scroll";
+import { scrollMenu, scrollSection, fadeFooter } from "./components/scroll";
 import { menuResponsive } from "./components/menuResponsive";
 
 const scrollSection1 = 250;
@@ -12,4 +12,5 @@ window.onscroll = () => {
   scrollMenu();
   scrollSection(section1, scrollSection1);
   scrollSection(section2, scrollSection2);
+  fadeFooter();
 };
