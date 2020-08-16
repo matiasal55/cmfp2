@@ -6,22 +6,17 @@
   top: 0;
   left: 0;
   z-index: 700;
+  display: none;
 
-  &.ocultar {
-    display: none;
-  }
+  // &.ocultar {
+  //   display: none;
+  // }
 
-  div {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 40%;
-    margin: 10px 0px;
-  }
-
-  // .loading-bar {
-  //   background-color: red;
-  //   width: 100%;
-  //   height: 10px;
+  // div {
+  //   display: flex;
+  //   justify-content: center;
+  //   position: relative;
+  //   top: 40%;
+  //   margin: 10px 0px;
   // }
 }

@@ -13,15 +13,23 @@ const browserSync = require("browser-sync"); // Servidor local
 const stream = browserSync.stream; // Servidor local - reload
 const reload = browserSync.reload; // Servidor local - reload
 const plumber = require("gulp-plumber"); // Maneja errores. En caso de algun error avisa y sigue ejecutando
-
 const cssPlugins = [cssnano(), autoprefixer()];
+const webpack = require("webpack-stream");
 
-gulp.task("babel", () => {
+// gulp.task("babel", () => {
+//   return gulp
+//     .src("./src/js/*.js")
+//     .pipe(plumber())
+//     .pipe(babel())
+//     .pipe(terser())
+//     .pipe(gulp.dest("./dev/js"))
+//     .pipe(stream());
+// });
+
+gulp.task("webpack", () => {
   return gulp
-    .src("./src/js/*.js")
-    .pipe(plumber())
-    .pipe(babel())
-    .pipe(terser())
+    .src("./src/js")
+    .pipe(webpack(require("./webpack.config.js")))
     .pipe(gulp.dest("./dev/js"))
     .pipe(stream());
 });
@@ -74,5 +82,5 @@ gulp.task("default", () => {
   });
   gulp.watch("./src/pug/**/*.pug", gulp.series("pug")).on("change", reload);
   gulp.watch("./src/scss/**/*.scss", gulp.series("sass")).on("change", reload);
-  gulp.watch("./src/js/*.js", gulp.series("babel")).on("change", reload);
+  gulp.watch("./src/js/**/*.js", gulp.series("webpack")).on("change", reload);
 });

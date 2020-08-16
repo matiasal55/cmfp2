@@ -1,7 +1,8 @@
 .nav-items
     a(href=`${directorio}/index.html`) Inicio
 if !footer
-    .nav-items.cursos-titulo Cursos <i class="fas fa-chevron-down" id="cursos"></i>
+    .nav-items.cursos-titulo 
+        a Cursos <i class="fas fa-chevron-down" id="cursos"></i>
         .cursos
             .cursos-items 
                 a(href=`${directorio}/cursos-especialidades.html`) Cursos Especialidades

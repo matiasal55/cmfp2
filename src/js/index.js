@@ -1,42 +1,15 @@
-const boton = document.getElementById("boton-responsive");
-const ver_menu = document.getElementsByClassName("menu")[0];
-const boton_cursos = document.getElementsByClassName("cursos-titulo")[0];
-const ver_cursos = document.getElementsByClassName("cursos")[0];
-const header = document.getElementsByClassName("header")[0];
+import { scrollMenu, scrollSection } from "./components/scroll";
+import { menuResponsive } from "./components/menuResponsive";
 
-const mostrar = (elemento, mostrar) => {
-  elemento.addEventListener("click", () => {
-    if (mostrar.classList.contains("responsive"))
-      mostrar.classList.remove("responsive");
-    else mostrar.classList.add("responsive");
-  });
-};
+const scrollSection1 = 250;
+const scrollSection2 = screen.height * 0.4;
+const section1 = document.getElementsByClassName("section1")[0];
+const section2 = document.getElementsByClassName("section2")[0];
 
-mostrar(boton, ver_menu);
-mostrar(boton_cursos, ver_cursos);
+menuResponsive();
 
 window.onscroll = () => {
-  const scrollMax = 300;
-  if (window.pageYOffset >= scrollMax) {
-    header.classList.add("scroll");
-    ver_menu.classList.add("scroll");
-    ver_cursos.classList.add("scroll");
-  } else {
-    header.classList.remove("scroll");
-    ver_cursos.classList.remove("scroll");
-  }
+  scrollMenu();
+  scrollSection(section1, scrollSection1);
+  scrollSection(section2, scrollSection2);
 };
-
-const barra = document.getElementsByClassName("loading-bar")[0];
-const loading = document.getElementsByClassName("loading")[0];
-
-// window.addEventListener("load", (e) => {
-//   if (document.readyState == "loading") barra.innerHTML = document.readyState;
-//   else {
-//     loading.remove();
-//   }
-// });
-
-window.addEventListener("DOMContentLoaded", (e) => {
-  loading.remove();
-});

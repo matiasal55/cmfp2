@@ -4,6 +4,7 @@ block parametros
     - titulo="Inicio"
     - archivo="index"
     - directorio="."
+    - js=true
 block main
     h1 Centro Municipal de Formación Profesional N°2
     h1 Manuel Belgrano
@@ -14,11 +15,11 @@ block main
         a(href="./inscripcion.html")
             input(type="button", value="Informes de inscripción" class="button-second")
 block contenido
-    section
+    section.section1
         h1 ¿Por qué cursar?
         .section1-cards
             include ../components/section1_cards
-    section
+    section.section2
         .noticias-calendario
             .noticias
                 h1 Noticias
