@@ -1,7 +1,7 @@
 # cmfp2
 
 <h1>[Personal] Proyecto "Centro Municipal de Formación Profesional N°2"</h1>
-<h2>Sitio web: <a href="www.matiasal55.github.io/cmfp2" target="_blank">www.matiasal55.github.io/cmfp2</a></h2>
+<h2>Sitio web: <a href="http://matiasal55.github.io/cmfp2" target="_blank">www.matiasal55.github.io/cmfp2</a></h2>
 <p> Proyecto de rediseño del sitio web del Centro Municipal de Formación Profesional N°2 Manuel Belgrano de la localidad de Morón, Buenos Aires. En el establecimiento 
 hice el curso de Redes Informáticas y Telefonía IP impartido por el profesor Alberto Lopez, con quien terminé mi relación momentanea en excelentes términos. 
 El profesor además se encarga de organizar distintos aspectos del lugar, entre ellos su sitio web, cuyo diseño está hecho en base a sus conocimientos personales, 
